@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: $background-body;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-style: normal;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+h2 {
+  color: $text-dark;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+
+  span {
+    color: $text-accent;
+    font-style: italic;
+  }
+}
+
+.app-button {
+  text-decoration: none;
+  display: flex;
+  width: 200px;
+  height: 64px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid $border-dark;
+  color: $text-dark;
+  transition: color 0.5s ease, background-color 0.5s ease;
+
+
+  * {
+    transition: color 0.5s ease, background-color 0.5s ease;
+
+  }
+
+  &_descr {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-weight: 600;
+  }
+
+
+  &_available {
+    font-size: 10px;
+    line-height: 140%;
+  }
+
+  &_platform {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &:hover {
+    color: $text-light;
+    background-color: $background-container;
+
+    * {
+      color: $text-light;
+      background-color: $background-container;
+    }
+  }
+
+  svg path {
+    transition: 0.5s all;
+  }
+
+  &:hover svg path {
+    fill: $text-light;
+  }
+
+
+}
+
+.social {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid $border-light;
+  transition: 0.5s all;
+
+  & svg path {
+    transition: 0.5s all;
+  }
+
+  &:hover {
+    background: $background-body;
+  }
+
+  &:hover svg path {
+    stroke: #403F3D;
+  }
+}

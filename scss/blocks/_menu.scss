@@ -1,0 +1,196 @@
+.header {
+  &_menu-link__underline {
+    border-bottom: 1px solid $text-dark;
+    cursor: default;
+  }
+}
+
+.menu {
+  margin-top: 20px;
+
+  &_title {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    color: $text-dark;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+
+    span {
+      color: $text-accent;
+      font-style: italic;
+    }
+  }
+}
+
+.tab {
+  &_buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &_items {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  &_refresh {
+    display: flex;
+    margin: 40px auto 0 auto;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid $border-dark;
+
+  }
+}
+
+.menu-card {
+
+  width: 310px;
+  height: 506px;
+  border-radius: 40px;
+  border: 1px solid $border-light;
+
+  &_img {
+    width: 310px;
+    height: 310px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      transform: scale(1.1);
+      width: 100%;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1);
+        object-fit: cover;
+      }
+    }
+  }
+
+  &_text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 196px;
+    gap: 12px;
+    color: $text-dark;
+    background: transparent;
+
+    .menu-card_price {
+      margin-top: auto;
+    }
+
+  }
+
+  &_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  &_descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &_price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  transition: all 0.5s;
+
+  &:hover {
+    cursor: pointer;
+
+    img {
+      transform: scale(1);
+      object-fit: cover;
+    }
+  }
+}
+
+.tab-button {
+  display: flex;
+  padding: 8px 16px 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid $border-light;
+  transition: all 0.5s;
+
+
+  &_img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: $border-light;
+
+    img {
+      width: 16px;
+      background: transparent;
+      object-fit: cover;
+    }
+  }
+
+  &_descr {
+    color: $text-dark;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    background: transparent;
+  }
+
+  &:hover {
+    background: $background-container;
+
+    .tab-button {
+      &_img {
+        background: $background-body;
+
+      }
+    }
+  }
+
+  &.active {
+    background: $background-container;
+
+    .tab-button {
+      &_img {
+        background: $background-body;
+      }
+
+      &_descr {
+        color: $text-light;
+      }
+    }
+  }
+}

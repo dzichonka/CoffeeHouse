@@ -1,0 +1,285 @@
+@media (max-width: 1439px) {
+  .tab {
+    &_content {
+      max-width: 1000px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .mobile {
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    &_column {
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &_wrapper {
+      padding: 100px 60px;
+    }
+  }
+}
+
+// @media (max-width: 1090px) {
+//   .tab {
+//     &_refresh {
+//       display: block;
+//       margin: 40px auto 0 auto;
+//       display: flex;
+//       width: 60px;
+//       height: 60px;
+//       justify-content: center;
+//       align-items: center;
+//       border-radius: 100px;
+//       border: 1px solid $border-dark;
+//     }
+//   }
+// }
+
+@media (max-width: 791px) {
+  .header {
+    position: relative;
+
+    .link-text {
+      font-size: 32px;
+      line-height: 125%;
+    }
+
+    &_wrapper {
+      display: block;
+    }
+
+    &_nav {
+      padding-top: 60px;
+      z-index: 9;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      right: -100%;
+      font-size: 32px;
+      line-height: 125%;
+      transition: .5s all;
+
+      &_open {
+        top: 100px;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &_menu-link {
+      z-index: 9;
+      position: fixed;
+      gap: 30px;
+      right: -50%;
+      top: 600px;
+      transition: .5s right;
+
+      .menu-link_link {
+        gap: 16px;
+      }
+
+      .menu-link_icon svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      &_open {
+        right: 50%;
+        transform: translateX(50%);
+
+        visibility: visible;
+        opacity: 1;
+      }
+
+
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+
+    &_logo-hamburger-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .hamburger {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        gap: 8px;
+        border-radius: 100px;
+        border: 1px solid $border-dark;
+
+        span {
+          display: block;
+          width: 16px;
+          height: 1.5px;
+          background: $text-dark;
+          transition: .5s all;
+        }
+
+        &_open {
+          z-index: 10;
+
+          span {
+
+            &:nth-child(1) {
+              transform: translateY(5px) rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+              transform: translateY(-5px) rotate(45deg);
+            }
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+  .enjoy {
+    padding: 100px 60px;
+  }
+
+  .gallery {
+    &_img {
+      max-width: 688px;
+
+      &__rectangle {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  .enjoy {
+    padding: 60px 16px;
+
+    &_title {
+      font-size: 42px;
+      line-height: 115%;
+    }
+  }
+
+  .slider {
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 532px;
+    }
+
+    &_arrow {
+      display: none;
+    }
+
+    &_items {
+      max-width: 348px;
+    }
+
+    &_img {
+      height: 348px;
+    }
+
+  }
+
+  .slide img {
+    height: 348px;
+    width: 348px;
+  }
+
+  .about {
+    &_title {
+      font-size: 32px;
+    }
+  }
+
+  .gallery {
+
+    &_img {
+      height: 590px;
+
+      img {
+        height: 120%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .mobile {
+    &_wrapper {
+      gap: 40px;
+    }
+
+    &_column {
+      width: 348px;
+      max-height: 380px;
+
+      &_img img {
+        height: 348px;
+        width: 348px;
+      }
+    }
+
+    &_apps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .footer {
+
+    &_wrapper {
+      padding: 60px 16px;
+      gap: 40px;
+    }
+
+    &_column {
+      min-width: 300px;
+    }
+
+  }
+
+  .menu {
+    &_title {
+      font-size: 32px;
+    }
+  }
+
+}
+
+@media (max-width: 380px) {}

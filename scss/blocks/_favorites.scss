@@ -1,0 +1,145 @@
+.favorites {
+  text-align: center;
+}
+
+.slider {
+  margin-top: 40px;
+  box-sizing: border-box;
+  color: $text-dark;
+  font-feature-settings: 'clig' off, 'liga' off;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  &_wrapper {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 640px;
+  }
+
+  &_items {
+
+    overflow: hidden;
+    width: 480px;
+    //max-width: 1152px;
+  }
+
+  &_line {
+    display: flex;
+    transition: 0.5s transform;
+    //transform: translateX(-480px);
+  }
+
+  &_arrow {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: $border-dark;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: all 0.5s;
+
+    &:hover {
+      background: $background-container;
+    }
+
+    svg {
+      transition: all 0.5s;
+
+
+    }
+
+    &:hover svg {
+      background-color: $background-container;
+
+    }
+
+    &:hover svg path {
+      stroke: $background-body;
+    }
+  }
+
+  .slide {
+    //width: 480px;
+
+
+    &_img {
+
+      max-height: 480px;
+    }
+
+    &_descr {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
+
+    &_title {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 125%;
+    }
+
+    &_text {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    &_price {
+      margin-top: 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 125%;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  &_controls {
+    margin-top: 40px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+    .control {
+      position: relative;
+      width: 40px;
+      height: 4px;
+      border-radius: 100px;
+      background: $border-light;
+
+      &_progress {
+
+        position: absolute;
+        left: 0;
+        border-radius: 100px;
+        width: 0;
+        height: 4px;
+        background-color: $border-dark;
+        transition: width .6s ease
+      }
+    }
+  }
+}

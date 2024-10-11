@@ -1,0 +1,47 @@
+.about {
+  &_title {
+    font-size: 59.9px;
+  }
+}
+
+.gallery {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &_img {
+    max-width: 660px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      transform: scale(1.1);
+      width: 100%;
+      transition: transform 500ms ease;
+    }
+
+    &:hover img {
+      transform: scale(1);
+      object-fit: cover;
+    }
+
+    &__square {
+      max-height: 590px;
+    }
+
+    &__rectangle {
+      max-height: 430px;
+    }
+  }
+}
