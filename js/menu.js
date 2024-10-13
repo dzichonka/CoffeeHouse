@@ -1,6 +1,6 @@
 'use strict';
 //menu
-const tabButtons = document.querySelectorAll('.tab-button');
+const tabButtons = document.querySelectorAll('.tab-btn');
 const tabItemsContainer = document.querySelector('.tab_content');
 console.log(tabItemsContainer);
 const tabRefresh = document.querySelector('.tab_refresh');

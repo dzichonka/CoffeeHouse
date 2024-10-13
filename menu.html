@@ -15,58 +15,91 @@
 
 <body>
   <div class="modal">
-    <div class="modal-window">
-      <div class="modal-wrapper">
+    <div class="modal_window">
+      <div class="modal_wrapper">
         <img class="modal_img" src="./assets/img/menu-deserts/dessert-1.png" alt="Marble cheesecake">
-        <div class="modal-content">
-          <h3 class="modal_title">Marble cheesecake</h3>
-          <div class="modal_descr">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</div>
+        <div class="modal_content">
+          <div class="modal_header">
+            <h3 class="modal_title">Marble cheesecake</h3>
+            <div class="modal_descr">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam
+            </div>
+          </div>
+
           <div class="modal_size">
+            <div class="modal_size_descr">Size</div>
+            <div class="tab_buttons">
+              <div class="modal_size-btn tab-button active" data-size="0">
+                <div class="tab-button_img">S</div>
+                <div class="tab-button_descr">50 g</div>
+              </div>
 
-            <div class="modal_size-btn active" data-size="0">
-              <div class="modal_size-btn_title">S</div>
-              <div class="modal_size-btn_descr">50 g</div>
+              <div class="modal_size-btn tab-button" data-size="0.5">
+                <div class="tab-button_img">
+                  M
+                </div>
+                <div class="modal_size-btn tab-button_descr">100 g</div>
+              </div>
+
+              <div class="tab-button" data-size="2">
+                <div class="tab-button_img">
+                  L
+                </div>
+                <div class="tab-button_descr">200 g</div>
+              </div>
             </div>
-
-            <div class="modal_size-btn" data-size="0.5">
-              <div class="modal_size-btn_title">M</div>
-              <div class="tab-button_descr">100 g</div>
-            </div>
-
-            <div class="modal_size-btn" data-size="1">
-              <div class="modal_size-btn_title">L</div>
-              <div class="modal_size-btn_descr">200 g</div>
-            </div>
-
           </div>
+
           <div class="modal_add">
+            <div class="modal_size_descr">Additives</div>
+            <div class="tab_buttons">
+              <div class="modal_add-btn tab-button" data-add="0.5">
+                <div class="tab-button_img">1</div>
+                <div class="tab-button_descr">Berries</div>
+              </div>
 
-            <div class="modal_add-btn active" data-size="0">
-              <div class="modal_size-btn_title">S</div>
-              <div class="modal_size-btn_descr">50 g</div>
+              <div class="modal_add-btn tab-button" data-add="0.5">
+                <div class="tab-button_img">
+                  2
+                </div>
+                <div class="tab-button_descr">Nuts</div>
+              </div>
+
+              <div class="modal_add-btn tab-button" data-add="0.5">
+                <div class="tab-button_img">
+                  3
+                </div>
+                <div class="tab-button_descr">Jam</div>
+              </div>
             </div>
-
-            <div class="modal_size-btn" data-size="0.5">
-              <div class="modal_size-btn_title">M</div>
-              <div class="tab-button_descr">100 g</div>
-            </div>
-
-            <div class="modal_size-btn" data-size="1">
-              <div class="modal_size-btn_title">L</div>
-              <div class="tab-button_descr">200 g</div>
-            </div>
-
           </div>
-          <div class="modal-content_additional">Inoculations: <span>none</span></div>
-          <div class="modal-content_additional">Diseasese: <span>none</span></div>
-          <div class="modal-content_additional">Parasites: <span>none</span></div>
-          <div class="modal-close"><svg width="52" height="52" viewbox="0 0 52 52" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="50" height="50" rx="25" stroke="#F1CDB3" stroke-width="2" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M27.4262 26L31.7046 21.7216C32.0985 21.3277 32.0985 20.6892 31.7046 20.2954C31.3108 19.9016 30.6723 19.9016 30.2785 20.2954L26 24.5739L21.7215 20.2954C21.3276 19.9015 20.6892 19.9015 20.2953 20.2954C19.9016 20.6892 19.9016 21.3277 20.2953 21.7215L24.5738 26L20.2953 30.2785C19.9016 30.6723 19.9016 31.3108 20.2953 31.7046C20.6892 32.0985 21.3276 32.0985 21.7215 31.7046L26 27.4261L30.2785 31.7046C30.6723 32.0985 31.3108 32.0985 31.7046 31.7046C32.0985 31.3108 32.0985 30.6723 31.7046 30.2785L27.4262 26Z"
-                fill="#292929" />
-            </svg></div>
+
+          <div class="modal_price">
+            <div class="modal_price_descr">Total:</div>
+            <div class="modal_price_sum">$3.50</div>
+          </div>
+          <div class="modal_alert">
+            <div class="modal_alert_svg"><svg width="16" height="16" viewbox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_268_11729)">
+                  <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z"
+                    stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clippath id="clip0_268_11729">
+                    <rect width="16" height="16" fill="white" />
+                  </clippath>
+                </defs>
+              </svg></div>
+            <div class="modal_alert_descr">The cost is not final. Download our mobile app to see the final price and
+              place your order. Earn loyalty points and
+              enjoy your favorite coffee with up to 20% discount.</div>
+          </div>
+
+          <div class="modal_close">Close</div>
 
         </div>
       </div>
@@ -125,19 +158,19 @@
       <div class="menu_tab tab">
 
         <div class="tab_buttons">
-          <div class="tab-button active" data-category="coffee">
+          <div class="tab-btn tab-button active" data-category="coffee">
             <div class="tab-button_img"><img src="assets/icons/coffee-tab.png" alt="coffee"></div>
             <div class="tab-button_descr">Coffee</div>
           </div>
 
-          <div class="tab-button" data-category="tea">
+          <div class="tab-btn tab-button" data-category="tea">
             <div class="tab-button_img">
               <img src="assets/icons/tea-tab.png" alt="tea">
             </div>
             <div class="tab-button_descr">Tea</div>
           </div>
 
-          <div class="tab-button" data-category="desert">
+          <div class="tab-btn tab-button" data-category="desert">
             <div class="tab-button_img">
               <img src="assets/icons/desert-tab.png" alt="desert">
             </div>
