@@ -37,4 +37,5 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   menuLink.addEventListener('click', closeMenu);
   logo.addEventListener('click', closeMenu);
+
 });

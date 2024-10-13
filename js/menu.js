@@ -1,5 +1,5 @@
 'use strict';
-
+//menu
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabItemsContainer = document.querySelector('.tab_content');
 console.log(tabItemsContainer);
@@ -63,3 +63,6 @@ tabRefresh.addEventListener('click', handleRefresh);
 window.onload = () => {
   loadMenuData('coffee');
 };
+
+//moidal
+
