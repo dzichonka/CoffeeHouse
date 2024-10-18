@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="modal">
+  <div class="modal modal-closed">
     <div class="modal_window">
       <div class="modal_wrapper">
         <img class="modal_img" src="./assets/img/menu-deserts/dessert-1.png" alt="Marble cheesecake">
@@ -27,48 +27,50 @@
 
           <div class="modal_size">
             <div class="modal_size_descr">Size</div>
-            <div class="tab_buttons">
+            <div class="tab_buttons modal_size-btns">
+
               <div class="modal_size-btn tab-button active" data-size="0">
                 <div class="tab-button_img">S</div>
-                <div class="tab-button_descr">50 g</div>
+                <div class="tab-button_descr modal_size-dynamic">50 g</div>
               </div>
 
               <div class="modal_size-btn tab-button" data-size="0.5">
                 <div class="tab-button_img">
                   M
                 </div>
-                <div class="modal_size-btn tab-button_descr">100 g</div>
+                <div class="tab-button_descr modal_size-dynamic">100 g</div>
               </div>
 
-              <div class="tab-button" data-size="2">
+              <div class="modal_size-btn tab-button" data-size="2">
                 <div class="tab-button_img">
                   L
                 </div>
-                <div class="tab-button_descr">200 g</div>
+                <div class="tab-button_descr modal_size-dynamic">200 g</div>
               </div>
+
             </div>
           </div>
 
           <div class="modal_add">
             <div class="modal_size_descr">Additives</div>
-            <div class="tab_buttons">
+            <div class="tab_buttons modal_add-btns">
               <div class="modal_add-btn tab-button" data-add="0.5">
                 <div class="tab-button_img">1</div>
-                <div class="tab-button_descr">Berries</div>
+                <div class="tab-button_descr modal_add-dynamic">Berries</div>
               </div>
 
               <div class="modal_add-btn tab-button" data-add="0.5">
                 <div class="tab-button_img">
                   2
                 </div>
-                <div class="tab-button_descr">Nuts</div>
+                <div class="tab-button_descr modal_add-dynamic">Nuts</div>
               </div>
 
               <div class="modal_add-btn tab-button" data-add="0.5">
                 <div class="tab-button_img">
                   3
                 </div>
-                <div class="tab-button_descr">Jam</div>
+                <div class="tab-button_descr modal_add-dynamic">Jam</div>
               </div>
             </div>
           </div>
@@ -107,6 +109,7 @@
 
 
   </div>
+
   <div class="container">
 
     <header class="header">
