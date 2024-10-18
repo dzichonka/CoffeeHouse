@@ -99,7 +99,7 @@
     gap: 8px;
     border: 1px solid $background-container;
     border-radius: 100px;
-    padding: 10px 78px;
+    padding: 10px;
     height: 44px;
     transition: all 0.5s ease;
     background: $text-light;
@@ -143,8 +143,8 @@
   margin-top: 40px;
 
   &_buttons {
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
   }

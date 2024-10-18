@@ -670,7 +670,7 @@ h2 span {
   gap: 8px;
   border: 1px solid #665F55;
   border-radius: 100px;
-  padding: 10px 78px;
+  padding: 10px;
   height: 44px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -711,6 +711,8 @@ h2 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1026,6 +1028,11 @@ h2 span {
     padding: 100px 60px;
   }
 }
+@media (max-width: 850px) {
+  .modal_window {
+    width: 688px;
+  }
+}
 @media (max-width: 791px) {
   .header {
     position: relative;
@@ -1235,5 +1242,19 @@ h2 span {
   }
   .menu_title {
     font-size: 32px;
+  }
+  .modal_window {
+    max-width: 342px;
+  }
+  .modal_img {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .modal_window {
+    max-width: 220px;
+  }
+  .modal_descr, .modal_alert {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
