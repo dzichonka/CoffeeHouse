@@ -752,6 +752,7 @@ h2 span {
           align-items: center;
   border-radius: 100px;
   border: 1px solid #665F55;
+  cursor: pointer;
 }
 
 .menu-card {
@@ -759,6 +760,7 @@ h2 span {
   height: 506px;
   border-radius: 40px;
   border: 1px solid #C1B6AD;
+  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -824,9 +826,6 @@ h2 span {
   font-weight: 600;
   line-height: 125%;
 }
-.menu-card:hover {
-  cursor: pointer;
-}
 .menu-card:hover img {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -848,6 +847,7 @@ h2 span {
   gap: 8px;
   border-radius: 100px;
   border: 1px solid #C1B6AD;
+  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }

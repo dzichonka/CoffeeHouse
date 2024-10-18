@@ -172,6 +172,7 @@
     align-items: center;
     border-radius: 100px;
     border: 1px solid $border-dark;
+    cursor: pointer;
   }
 }
 
@@ -236,11 +237,10 @@
     line-height: 125%;
   }
 
+  cursor: pointer;
   transition: all 0.5s;
 
   &:hover {
-    cursor: pointer;
-
     img {
       transform: scale(1);
       object-fit: cover;
@@ -256,6 +256,7 @@
   gap: 8px;
   border-radius: 100px;
   border: 1px solid $border-light;
+  cursor: pointer;
   transition: all 0.5s;
 
   &_img {
@@ -289,7 +290,6 @@
     .tab-button {
       &_img {
         background: $background-body;
-
       }
     }
   }
